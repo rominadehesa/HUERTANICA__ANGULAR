@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "app-huertanica"
+  "defaultProject": "app-huertanica",
+  "cli": {
+    "analytics": "f509d9e3-f499-400b-8009-157fc69678ee"
+  }
 }
