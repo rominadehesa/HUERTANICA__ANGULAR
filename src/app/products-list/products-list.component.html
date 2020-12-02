@@ -1,18 +1,33 @@
 
-<table class="table table-borderless">
-    <thead>
-    <h6>Mira todo lo que tenemos para ofrecerte: </h6>
-    </thead>
-    <tbody>
-      <tr>
-        <td>{{product.nombre}}</td>
-        <td> $ {{product.precio}}</td>
-        <td>
-            <img [src]="product.imagen"class="rounded mx-auto d-block" style="width: 5rem;" alt="">
 
-        </td>
-        
-      </tr>
-    </tbody>
-  </table>
+<h6>Mira todo lo que tenemos para ofrecerte: </h6>
+  <ul *ngFor="let p of products">
+      <div class="card border-dark border-top-0" style="width: 25rem; height: auto;">
+        <div class="card-body">
+          <div class="container">
+              <div class="row">
+                <div class="col-2">
+                <img [src]="p.imagen"class="rounded mx-auto d-block card-img-top" style="width: auto; height: 7rem;" alt="">
+                </div>
+                <div class="col-10">
+                  <h5 class="card-title">{{p.nombre}}</h5>
+                  <h6 [ngClass]="{precio : p.oferta}"> {{p.precio | currency}}</h6>
+                  <button class="btn btn-dark btn-sm" (click)="lessUnit(p)">-</button>
+                  <input class="col-3" type="number" [(ngModel)]="p.cantidad">
+                  <button class="btn btn-dark btn-sm" (click)="moreUnit(p)">+</button>
+                </div>
+                <div *ngIf="p.cantidad > p.stock" class="alert alert-warning alert-sm col-12" role="alert">
+                  No hay stock!
+                </div>
+              </div>
+          </div> 
+        </div>
+      </div>
+  </ul>
+
+
+  
+
+
+
 
