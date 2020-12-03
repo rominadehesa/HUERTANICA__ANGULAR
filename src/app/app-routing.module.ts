@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HuertanicaProductsComponent } from './huertanica-products/huertanica-products.component';
 import { HuertanicaHomeComponent } from './huertanica-home/huertanica-home.component';
 import { HuertanicaContactComponent } from './huertanica-contact/huertanica-contact.component';
+import { HuertanicaWorkshopsComponent } from './huertanica-workshops/huertanica-workshops.component'
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path : 'contact',
     component : HuertanicaContactComponent
+  },
+  {
+    path : 'workshops',
+    component : HuertanicaWorkshopsComponent
   }
 ];
 
