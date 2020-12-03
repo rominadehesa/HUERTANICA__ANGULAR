@@ -2,3 +2,14 @@
     text-decoration: none;
     color: black;
 }
+footer {
+    margin-top: 1%;
+    margin: 10%;
+    background-color: black;
+    font-family: monospace;
+    color: white;
+}
+
+header {
+    margin-bottom: 1%;
+}

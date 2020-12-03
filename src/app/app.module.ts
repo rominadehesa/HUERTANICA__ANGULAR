@@ -9,6 +9,7 @@ import { HuertanicaProductsComponent } from './huertanica-products/huertanica-pr
 import { AppRoutingModule } from './app-routing.module';
 import { HuertanicaContactComponent } from './huertanica-contact/huertanica-contact.component';
 import { HuertanicaHomeComponent } from './huertanica-home/huertanica-home.component';
+import { HuertanicaWorkshopsComponent } from './huertanica-workshops/huertanica-workshops.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HuertanicaHomeComponent } from './huertanica-home/huertanica-home.compo
     ShoppingCartComponent,
     HuertanicaProductsComponent,
     HuertanicaContactComponent,
-    HuertanicaHomeComponent
+    HuertanicaHomeComponent,
+    HuertanicaWorkshopsComponent
   ],
   imports: [
     BrowserModule,
