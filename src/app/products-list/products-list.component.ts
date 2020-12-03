@@ -11,7 +11,7 @@ export class ProductsListComponent implements OnInit {
   {
     nombre: 'Plantines x6',
     precio : 220,
-    imagen : 'assets/img/img1.jpg',
+    imagen : 'https://i.ibb.co/2tgCwTh/img1.jpg',
     oferta : false, 
     cantidad : 0,
     stock : 5,
@@ -19,7 +19,7 @@ export class ProductsListComponent implements OnInit {
   {
     nombre: 'Dulce Organico Sabor Durazno',
     precio : 180,
-    imagen : 'assets/img/img4.jpg',
+    imagen : 'https://i.ibb.co/98HHY3C/img4.jpg',
     oferta : false, 
     cantidad : 0,
     stock : 5,
@@ -27,7 +27,7 @@ export class ProductsListComponent implements OnInit {
   {
     nombre: 'Huertero',
     precio : 120,
-    imagen : 'assets/img/img2.jpg',
+    imagen : 'https://i.ibb.co/C80C3dx/img2.jpg',
     oferta : true,
     cantidad : 0,
     stock : 5,
