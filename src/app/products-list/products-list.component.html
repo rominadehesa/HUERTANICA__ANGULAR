@@ -18,12 +18,8 @@
           No hay stock!
           </div>
 
-            <div class="btn-group" role="group" >
-              <button class="btn btn-dark" (click)="lessUnit(p)">-</button>
-              <input type="number" [(ngModel)]="p.cantidad">
-              <button class="btn btn-dark" (click)="moreUnit(p)">+</button>
-            </div>
-        
+          <app-input-int [(quantity)]="p.cantidad" [max]="p.stock"></app-input-int>
+          <button class="btn btn-dark float-right" (click)="addToCart(p)">Agregar</button>
         </div>
       </div>
     </li>

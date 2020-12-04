@@ -1,0 +1,5 @@
+<div class="btn-group" role="group" >
+    <button class="btn btn-dark" (click)="lessUnit()">-</button>
+    <input type="number" [(ngModel)]="quantity" (keyup)="changeQuantity($event)">
+    <button class="btn btn-dark" (click)="moreUnit()">+</button>
+</div>

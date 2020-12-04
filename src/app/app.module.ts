@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HuertanicaContactComponent } from './huertanica-contact/huertanica-contact.component';
 import { HuertanicaHomeComponent } from './huertanica-home/huertanica-home.component';
 import { HuertanicaWorkshopsComponent } from './huertanica-workshops/huertanica-workshops.component';
+import { InputIntComponent } from './input-int/input-int.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HuertanicaWorkshopsComponent } from './huertanica-workshops/huertanica-
     HuertanicaProductsComponent,
     HuertanicaContactComponent,
     HuertanicaHomeComponent,
-    HuertanicaWorkshopsComponent
+    HuertanicaWorkshopsComponent,
+    InputIntComponent
   ],
   imports: [
     BrowserModule,
